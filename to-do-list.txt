@@ -1,5 +1,0 @@
-to-do list: 
-
-- Increase font size of everything in the plot
-- Center the plot in the shiny app together with the country input
-- Deploy app online in .shinapps.io

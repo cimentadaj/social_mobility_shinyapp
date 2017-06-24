@@ -39,7 +39,8 @@ server <- # Define server logic required to draw a histogram
                 ggtitle("Probability of achieving service class") +
                 coord_cartesian(expand = FALSE) +
                 artyfarty::theme_scientific() +
-                theme(legend.position = c(0.95, 0.95))
+                theme(legend.position = c(0.95, 0.95),
+                      text = element_text(size = 15))
             
             graph_m <-
                 filtered() %>%
@@ -78,7 +79,7 @@ server <- # Define server logic required to draw a histogram
 
 ui <- bootstrapPage(
     selectInput('country', 'Choose country:', unique(all_data$country)),
-    plotOutput('graph', width = 950, height = 700)
+    plotOutput('graph', width = 1250, height = 800)
 )
 
 
